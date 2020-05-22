@@ -1400,7 +1400,6 @@ public class SAXDigiDocFactory
                 Notary not = new Notary();
                 if(Id != null)
                     not.setId(Id);
-                not.setId(Id);
                 up.addNotary(not);
                 if(sig.getProfile() == null &&
                         (m_doc.getFormat().equals(SignedDoc.FORMAT_DIGIDOC_XML) ||
