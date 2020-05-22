@@ -778,7 +778,8 @@ public class SAXDigiDocFactory
                         m_xmlnsAttr = SignedDoc.xmlns_xmldsig;
                     Signature sig = getLastSignature();
                     SignedProperties sp = new SignedProperties(sig);
-                    sp.setId(Id);
+                    if(Id != null)
+                        sp.setId(Id);
                     if(Target != null)
                         sp.setTarget(Target);
                     sig.setSignedProperties(sp);
